@@ -1,4 +1,4 @@
-// My first solution
+/// My first solution
 // pub fn is_palindrome(s: String) -> bool {
 //     let chars: Vec<char> = s
 //         .chars()
@@ -13,7 +13,7 @@
 //         }
 //     }
 //     true
-// }
+//}
 
 /// More ideological way to solve this task from leetcode tops! And yeah here
 /// two pointers too, but more rusty
