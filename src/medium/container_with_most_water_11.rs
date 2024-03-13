@@ -20,7 +20,7 @@ impl Solution {
     }
 }
 
-struct Solution();
+struct Solution;
 
 #[cfg(test)]
 mod tests {
