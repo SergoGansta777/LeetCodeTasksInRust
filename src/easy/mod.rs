@@ -1,3 +1,4 @@
+mod binary_search_704;
 mod contains_dublicate_217;
 mod single_number_136;
 mod third_max_414;
