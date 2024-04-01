@@ -7,7 +7,6 @@ impl Solution {
 
         let mut first = 0;
         let mut last = rows * cols - 1;
-
         while first <= last {
             let mid = first + (last - first) / 2;
             let mid_value = matrix[(mid / cols) as usize][(mid % cols) as usize];

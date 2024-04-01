@@ -6,6 +6,7 @@ fn single_number(nums: Vec<i32>) -> i32 {
     single_number
 }
 
+
 #[cfg(test)]
 mod tests {
     use super::single_number;
