@@ -1,5 +1,7 @@
 mod binary_search_704;
 mod contains_dublicate_217;
+mod isomorphic_strings_205;
+mod length_of_last_word_58;
 mod single_number_136;
 mod third_max_414;
 mod two_sum_1;
