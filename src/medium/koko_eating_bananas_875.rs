@@ -4,9 +4,10 @@ impl Solution {
         for pile in piles {
             needed_time += pile / speed;
             if pile % speed != 0 {
-                needed_time += 1;
+                needed_time += 1
             }
         }
+
         needed_time <= h
     }
 
