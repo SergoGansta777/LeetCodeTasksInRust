@@ -12,16 +12,16 @@ impl Solution {
 
         for (s_ch, t_ch) in chars {
             match mapping.insert(s_ch, t_ch) {
-                Some(mapped_value) => {
-                    if t_ch != mapped_value {
-                        return false;
-                    }
-                }
                 None => {
                     if mapped_values.contains(&t_ch) {
                         return false;
                     }
                     mapped_values.insert(t_ch);
+                }
+                Some(mapped_value) => {
+                    if t_ch != mapped_value {
+                        return false;
+                    }
                 }
             }
         }
