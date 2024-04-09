@@ -1,4 +1,7 @@
-use std::cmp::Ordering::{Equal, Greater, Less};
+use std::{
+    cmp::Ordering::{Equal, Greater, Less},
+    usize,
+};
 
 impl Solution {
     pub fn search(nums: Vec<i32>, target: i32) -> i32 {
@@ -12,6 +15,7 @@ impl Solution {
                 Greater => last = mid - 1,
             }
         }
+
         -1
     }
 }
