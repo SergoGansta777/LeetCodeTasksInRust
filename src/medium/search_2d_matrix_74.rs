@@ -2,11 +2,9 @@ use std::cmp::Ordering;
 
 impl Solution {
     pub fn search_matrix(matrix: Vec<Vec<i32>>, target: i32) -> bool {
-        let rows = matrix.len() as i32;
-        let cols = matrix[0].len() as i32;
+        let (rows, cols) = (matrix.len() as i32, matrix[0].len() as i32);
+        let (mut first, mut last) = (0, rows * cols - 1);
 
-        let mut first = 0;
-        let mut last = rows * cols - 1;
         while first <= last {
             let mid = first + (last - first) / 2;
             let mid_value = matrix[(mid / cols) as usize][(mid % cols) as usize];
@@ -18,7 +16,7 @@ impl Solution {
             }
         }
 
-        false
+        true
     }
 }
 
